@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="apEstado" prefHeight="244.0" prefWidth="481.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="br.com.rff.controller.FormEstadoController">
+  <children>
+    <GridPane layoutX="75.0" layoutY="39.0" prefHeight="130.0" prefWidth="306.0">
+      <children>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nome" GridPane.columnIndex="0" GridPane.halignment="RIGHT" GridPane.rowIndex="0">
+          <font>
+            <Font size="22.0" fx:id="x1" />
+          </font>
+          <GridPane.margin>
+            <Insets right="5.0" fx:id="x2" />
+          </GridPane.margin>
+        </Text>
+        <Text font="$x1" strokeType="OUTSIDE" strokeWidth="0.0" text="Sigla" GridPane.columnIndex="0" GridPane.halignment="RIGHT" GridPane.margin="$x2" GridPane.rowIndex="1" />
+        <TextField fx:id="txtNome" prefWidth="200.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="0" />
+        <TextField fx:id="txtSigla" prefWidth="65.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="138.0" minWidth="10.0" prefWidth="72.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="151.0" minWidth="10.0" prefWidth="61.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="173.0" minWidth="10.0" prefWidth="173.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints maxHeight="64.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="87.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="100.0" minHeight="10.0" prefHeight="49.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+  </children>
+</AnchorPane>
